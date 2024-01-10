@@ -25,12 +25,13 @@
 .container{
     display: grid;
     grid-template-areas: 
-    "header   header    header    header"
-    "nav      main      main     sidebar"
-    "nav     main      main    advertise"
-    "footer  footer  footer  footer"
+    "header   header     header   header"
+    "nav      main       main     sidebar"
+    "nav      main       main     advertise"
+    "footer   footer     footer   footer"
     ;
 }
+    /* smaller device */
 @media screen and (max-width: 570px) {
     .container{
         grid-template-areas: 
@@ -40,6 +41,17 @@
         "sidebar"
         "advertise"
         "footer"
+        ;
+    }
+}
+     /* mideam device */
+@media screen and (min-width:571px) and (max-width: 780px) {
+    .container{
+        grid-template-areas: 
+        "header header header"
+        "nav     nav     nav"
+        "sidebar  main  main" 
+        "advertise footer footer"
         ;
     }
 }
