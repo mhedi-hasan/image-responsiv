@@ -1,0 +1,45 @@
+.header,.nav,.main,.sidebar,.advertise,.footer {
+    background-color: tomato;
+    border: 2px solid red;
+    border-radius: 9px;
+    padding: 10px;
+}
+.header{
+    grid-area: header;
+}
+.nav{
+    grid-area: nav;
+}
+.main{ 
+    grid-area: main;
+}
+.sidebar{
+    grid-area: sidebar;
+}
+.advertise{
+    grid-area: advertise;
+}
+.footer{
+    grid-area: footer;
+}
+.container{
+    display: grid;
+    grid-template-areas: 
+    "header   header    header    header"
+    "nav      main      main     sidebar"
+    "nav     main      main    advertise"
+    "footer  footer  footer  footer"
+    ;
+}
+@media screen and (max-width: 570px) {
+    .container{
+        grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "sidebar"
+        "advertise"
+        "footer"
+        ;
+    }
+}
