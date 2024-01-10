@@ -9,4 +9,11 @@ img{
 }
 .banar-section {
     height: 400px;
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+.vartical-img{
+    height: 50%;
+    
 }
